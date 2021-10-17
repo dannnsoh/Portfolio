@@ -5,8 +5,10 @@ interface NavProps {
 }
 
 const NavLink = (props: NavProps) => {
+	const id = `#${props.name.toLowerCase()}`;
+
 	return (
-		<Nav.Link className="navlink" href={`#${props.name.toLowerCase()}`}>
+		<Nav.Link className="navlink" href={id}>
 			{props.name.toUpperCase()}
 		</Nav.Link>
 	);

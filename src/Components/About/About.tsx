@@ -1,18 +1,39 @@
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
-import aboutImg from "./me.jpg";
+import Image from "react-bootstrap/Image";
+import infoImage from "./images/me.jpg";
+import Icons from "./Icons";
 
 const About = () => {
 	return (
-		<Card className="aboutCard col-6">
-			<Card.Img src={aboutImg} />
-			<Card.Body>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum nam itaque officia doloribus, voluptates
-				sapiente quae, perspiciatis odio quasi ipsum cupiditate veritatis. Laudantium exercitationem repudiandae
-				velit alias veniam. Laboriosam, veritatis? Repellat quia aperiam sit a natus laboriosam. Recusandae
-				ducimus at vero similique delectus laudantium autem illo doloribus fugiat dolores fuga, explicabo,
-				consequuntur laboriosam. Suscipit cum, ipsam vel totam ipsa sunt!
-			</Card.Body>
-		</Card>
+		<Container className="about-container" fluid>
+			<Row className="text-center mb-5">
+				<h1 className="section-title">About</h1>
+			</Row>
+			<Row>
+				<Col className="about-info">
+					<Card className="about-card">
+						<div className="text-center">
+							<Image src={infoImage} roundedCircle fluid />
+						</div>
+						<Card.Body className="about-text">
+							Motivated and passionate developer looking to gather more experience in the industry and put
+							my skills to use in a professional environment. I am a self-taught web developer with a
+							strong passion for Javascript, React, and all things web development. Through my personal
+							projects, I came to be familiar with the development process for various web-based
+							technologies. Despite my inexperience in the web development industry, I look forward to
+							continuing my journey in this field, meeting new people and gathering more knowledge on the
+							way, and eventually starting a career as a full stack web developer.
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col className="about-skills text-center">
+					<Icons />
+				</Col>
+			</Row>
+		</Container>
 	);
 };
 

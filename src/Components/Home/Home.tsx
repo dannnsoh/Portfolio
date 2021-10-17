@@ -1,17 +1,19 @@
 import Container from "react-bootstrap/Container";
 
-const Header = () => {
+const Home = () => {
 	return (
 		<Container className="header">
 			<div>
 				Hello, I'm <span>Daniel</span>.
 			</div>
 			<div>I'm a web developer.</div>
-			<button className="headerBtn">
-				<i className="fas fa-chevron-down fa-2x" />
+			<button className="header-button">
+				<a href="#about">
+					<i className="fas fa-angle-double-down fa-2x" />
+				</a>
 			</button>
 		</Container>
 	);
 };
 
-export default Header;
+export default Home;

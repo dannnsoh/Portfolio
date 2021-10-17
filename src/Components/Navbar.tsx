@@ -1,16 +1,18 @@
+import { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import NavLink from "./NavLink";
 
 const Header = () => {
+	const [ active, setActive ] = useState("");
+
 	return (
-		<Navbar variant="dark">
+		<Navbar fixed="top" variant="dark">
 			<Container fluid>
-				<Nav className="mx-auto">
+				<Nav activeKey={active} onSelect={(selectedKey) => setActive(selectedKey ? selectedKey : "")}>
 					<NavLink name="Home" />
 					<NavLink name="About" />
-					<NavLink name="Resume" />
 					<NavLink name="Projects" />
 					<NavLink name="Contact" />
 				</Nav>
