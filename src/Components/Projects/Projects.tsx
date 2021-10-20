@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
 	return (
@@ -7,7 +8,11 @@ const Projects = () => {
 			<Row className="text-center">
 				<h1 className="section-title">Projects</h1>
 			</Row>
-			<Row>Hello</Row>
+			<Row className="projects-area">
+				<ProjectCard />
+				<ProjectCard />
+				<ProjectCard />
+			</Row>
 		</Container>
 	);
 };

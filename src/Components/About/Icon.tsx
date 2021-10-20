@@ -8,12 +8,8 @@ interface IconProps {
 const Icon = (props: IconProps) => {
 	return (
 		<Figure>
-			<div className="ext-border-effect">
-				<div className="int-border-effect">
-					{props.icon}
-					<Figure.Caption>{props.name.toUpperCase()}</Figure.Caption>
-				</div>
-			</div>
+			{props.icon}
+			<Figure.Caption>{props.name.toUpperCase()}</Figure.Caption>
 		</Figure>
 	);
 };

@@ -9,9 +9,12 @@ const Contact = () => {
 			</Row>
 			<Row>
 				<form className="input-area">
+					<div className="input-area-heading">
+						<span>Have a question or want to work together? Let's get in touch!👋</span>
+					</div>
 					<input type="text" placeholder="Name" />
 					<input type="email" placeholder="Email" />
-					<textarea rows={8} placeholder="Message" />
+					<textarea rows={8} placeholder="Type a message!" />
 					<button className="submit-contact">Submit</button>
 				</form>
 			</Row>
