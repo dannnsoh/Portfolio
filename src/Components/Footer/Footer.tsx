@@ -27,7 +27,7 @@ const Footer = () => {
 					<LinkedInIcon className="footer-icon" />
 				</a>
 			</div>
-			<span className="footer-text">Daniel Soh @ 2021</span>
+			<span className="footer-text">Daniel Soh ©2021</span>
 		</Container>
 	);
 };

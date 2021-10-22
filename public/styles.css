@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html,
@@ -32,7 +33,7 @@ body {
 #about,
 #projects {
 	height: 100vh;
-	padding: 4% 9% 0;
+	padding: 5% 9% 0;
 }
 
 /* Navbar */
@@ -57,6 +58,7 @@ body {
 
 .navlink:hover {
 	border-top: solid 5px #ff4d5a;
+	transform: translateY(3px);
 }
 
 /* Titles */
@@ -66,6 +68,13 @@ body {
 	letter-spacing: 3px;
 	margin: 0;
 	position: relative;
+	text-shadow: 5px 5px #ff4d5a;
+	transition: all 0.25s;
+}
+
+.section-title:hover {
+	text-shadow: 3px 4px #ff4d5a;
+	transform: translate(3px);
 }
 
 /* Header */
@@ -145,7 +154,7 @@ body {
 	text-align: center;
 	margin: 1rem 0.7rem;
 	padding: 1.1rem 0;
-	transition: all 0.4s;
+	transition: all 0.4s, opacity 1.2s;
 	position: relative;
 	background-color: #1a1a1a;
 	border: solid 1px #0a0a0a;
@@ -167,7 +176,7 @@ body {
 	margin-top: 4px;
 }
 
-.figure-random {
+.figure-fade-in {
 	opacity: 1;
 }
 
@@ -177,7 +186,7 @@ body {
 
 /* Projects */
 #projects {
-	padding: 4% 5% 0;
+	padding: 5% 4% 0;
 }
 
 .projects-container {
@@ -185,12 +194,21 @@ body {
 }
 
 .projects-area {
-	padding-top: 4%;
+	padding-top: 3%;
 }
 
 .projects-card {
 	background-color: #1a1a1a;
 	margin: 1rem;
+}
+
+.card-subtitle {
+	display: inline-block;
+	margin: 0.2rem 0.4rem;
+}
+
+.fa-circle {
+	margin-right: 3px;
 }
 
 /* Contact */

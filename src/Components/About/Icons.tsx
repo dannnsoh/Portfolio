@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Icon from "./Icon";
-import AppIcons from "./importIcons";
+import AppIcons from "./icons/index";
 import { useInView } from "react-intersection-observer";
 import fadeRandom from "./fadeRandom";
 
