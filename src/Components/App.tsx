@@ -4,7 +4,6 @@ import Header from "./Home/Home";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
-import Footer from "./Footer/Footer";
 import Particles from "react-tsparticles";
 import particlesHomeOptions from "./particles/particlesHome.json";
 import particlesBodyOptions from "./particles/particlesBody.json";
@@ -34,7 +33,6 @@ const App = () => {
 				<section id="contact">
 					<Contact />
 				</section>
-				<Footer />
 			</div>
 		</div>
 	);

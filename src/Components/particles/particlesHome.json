@@ -26,7 +26,7 @@
 			"grab": {
 				"distance": 200,
 				"lineLinked": {
-					"opacity": 0.5
+					"opacity": 0.8
 				}
 			}
 		}
@@ -39,7 +39,7 @@
 			"color": "#6a6a6a",
 			"distance": 175,
 			"enable": true,
-			"opacity": 0.5,
+			"opacity": 0.8,
 			"width": 1,
 			"shadow": {
 				"enable": true,

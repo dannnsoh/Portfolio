@@ -4,7 +4,6 @@ const fadeRandom = () => {
 	const icons = document.querySelectorAll(".figure");
 	const maxRange = (icons.length + 1) * 280;
 	let nums = _.range(500, maxRange, 280);
-	console.log(nums);
 
 	icons.forEach((icon) => {
 		nums = _.shuffle(nums);

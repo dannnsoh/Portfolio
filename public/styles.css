@@ -31,7 +31,8 @@ body {
 
 #home,
 #about,
-#projects {
+#projects,
+#contact {
 	height: 100vh;
 	padding: 5% 9% 0;
 }
@@ -212,9 +213,8 @@ body {
 }
 
 /* Contact */
-#contact {
-	height: calc(100vh - 210px);
-	padding: 4% 9% 0;
+.contact-container {
+	height: 100%;
 }
 
 .input-area {
@@ -232,11 +232,6 @@ body {
 	letter-spacing: 0.4px;
 	text-align: center;
 	padding-bottom: 2rem;
-}
-
-.input-area-heading span {
-	padding: 0 3rem;
-	display: block;
 }
 
 .input-area input,
@@ -260,6 +255,12 @@ body {
 	line-height: 1.5rem;
 }
 
+.input-area input:-webkit-autofill {
+	box-shadow: 0 0 0 30px #2a2a2a inset;
+	-webkit-box-shadow: 0 0 0 30px #2a2a2a inset;
+	-webkit-text-fill-color: #fafafa;
+}
+
 .submit-contact {
 	align-self: flex-end;
 	background-color: #1a1a1a;
@@ -281,17 +282,17 @@ body {
 	color: #fafafa;
 }
 
+/* Footer */
 .footer {
-	padding: 0.5% 3% 2.4%;
+	margin-top: 2rem;
 	text-align: center;
-	background-color: #2a2a2a;
 	position: relative;
 }
 
 .footer-button {
-	background-color: #5a5a5a;
+	background-color: inherit;
 	color: #fafafa;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1rem 0.3rem;
 	border: none;
 	transition: all 0.25s;
 	position: relative;
@@ -299,7 +300,8 @@ body {
 }
 
 .footer-button:hover {
-	background-color: #ff4d5a;
+	background-color: inherit;
+	color: #ff4d5a;
 	animation: shakeY;
 	animation-duration: 6s;
 }
@@ -310,7 +312,7 @@ body {
 }
 
 .footer-links {
-	margin: 0.6rem auto 1.5rem;
+	margin-bottom: 1.1rem;
 }
 
 .footer-icon {
