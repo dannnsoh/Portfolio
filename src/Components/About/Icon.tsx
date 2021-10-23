@@ -7,7 +7,7 @@ interface IconProps {
 
 const Icon = (props: IconProps) => {
 	return (
-		<Figure>
+		<Figure className={`${props.name}-icon`}>
 			{props.icon}
 			<Figure.Caption>{props.name.toUpperCase()}</Figure.Caption>
 		</Figure>

@@ -12,7 +12,11 @@ const Header = (props: NavProps) => {
 	const [ active, setActive ] = useState("");
 
 	return (
-		<Navbar style={props.inView ? {} : { boxShadow: "0 1px 6px 3px #0a0a0a93" }} fixed="top" variant="dark">
+		<Navbar
+			style={props.inView ? {} : { boxShadow: "0 1px 6px 3px #0a0a0a93", backgroundColor: "#1a1a1a" }}
+			fixed="top"
+			variant="dark"
+		>
 			<Container fluid>
 				<Nav activeKey={active} onSelect={(selectedKey) => setActive(selectedKey ? selectedKey : "")}>
 					<NavLink name="Home" />

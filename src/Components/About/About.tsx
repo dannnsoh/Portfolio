@@ -21,6 +21,7 @@ const About = () => {
 			</Row>
 			<Row>
 				<Col
+					lg={6}
 					className="about-info"
 					style={inView ? { animation: "fadeInLeft", animationDuration: "1.5s" } : { visibility: "hidden" }}
 				>
@@ -34,11 +35,11 @@ const About = () => {
 							out of new things to discover, drives my excitement and passion for web development. Despite
 							my inexperience in the web development industry, I look forward to continuing my journey in
 							this field, meeting new people and gathering more knowledge on the way, and eventually
-							starting a career as a full stack web developer.
+							starting my career as a full-fledged web developer.
 						</span>
 					</div>
 				</Col>
-				<Col ref={iconsEl} className="about-skills text-center">
+				<Col lg={6} ref={iconsEl} className="about-skills text-center">
 					<Icons />
 				</Col>
 			</Row>

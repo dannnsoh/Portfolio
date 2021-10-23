@@ -34,12 +34,12 @@ body {
 #projects,
 #contact {
 	height: 100vh;
-	padding: 5% 9% 0;
+	padding: 5rem 10.7rem 0;
 }
 
 /* Navbar */
 .navbar {
-	background-color: #1a1a1a;
+	background-color: #1a1a1a00;
 	transition: all 0.75s;
 }
 
@@ -133,13 +133,14 @@ body {
 }
 
 .about-text-container {
-	padding: 5% 9%;
+	padding: 5% 8%;
 }
 
 .about-text {
 	font-weight: 500;
 	font-size: 1.2rem;
 	letter-spacing: 0.3px;
+	line-height: 1.8rem;
 }
 
 /* About - Skills */
@@ -147,10 +148,12 @@ body {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding: 0 13%;
+	padding: 0 11%;
 }
 
 .figure {
+	width: 158px;
+	height: 128px;
 	display: block;
 	text-align: center;
 	margin: 1rem 0.7rem;
@@ -187,7 +190,7 @@ body {
 
 /* Projects */
 #projects {
-	padding: 5% 4% 0;
+	padding: 5rem 4.8rem 0;
 }
 
 .projects-container {
@@ -201,6 +204,10 @@ body {
 .projects-card {
 	background-color: #1a1a1a;
 	margin: 1rem;
+	min-width: 440px;
+	min-height: 386px;
+	max-width: 630px;
+	max-height: 486px;
 }
 
 .card-subtitle {
@@ -239,7 +246,7 @@ body {
 	color: #fafafa;
 	background-color: #2a2a2a;
 	display: block;
-	margin: 0.1rem;
+	margin: 2px;
 	padding: 2%;
 	outline: none;
 	border: none;

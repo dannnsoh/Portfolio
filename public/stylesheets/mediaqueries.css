@@ -1,0 +1,26 @@
+@media (max-width: 1450px) {
+	#about {
+		padding: 5rem 5rem 0;
+	}
+	.about-skills-container {
+		padding: 0 5%;
+	}
+	.about-text-container {
+		padding: 5% 0;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+	#about {
+		padding: 5rem 0 0;
+	}
+	.about-info {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.about-skills-container {
+		display: none;
+	}
+}
