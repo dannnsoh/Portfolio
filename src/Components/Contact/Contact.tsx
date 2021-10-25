@@ -23,7 +23,7 @@ const Contact = () => {
 			<Row className="text-center">
 				<h1 className="section-title">Contact Me</h1>
 			</Row>
-			<Row>
+			<Row className="justify-content-center">
 				<form
 					action={`mailto:danielsoh123@gmail.com?subject=Get%20In%20Touch&body=${formInput.message}`}
 					method="post"

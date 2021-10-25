@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { ReactComponent as GithubIcon } from "../icons/github.svg";
-import { ReactComponent as LinkedInIcon } from "../icons/linkedin.svg";
 import { ReactComponent as TelegramIcon } from "../icons/telegram.svg";
 
 const Footer = () => {
@@ -18,9 +17,6 @@ const Footer = () => {
 				</a>
 				<a href="https://telegram.me/dannnsoh">
 					<TelegramIcon className="footer-icon" />
-				</a>
-				<a href="https://www.linkedin.com/in/daniel-s-61a6bb110">
-					<LinkedInIcon className="footer-icon" />
 				</a>
 			</div>
 			<span className="footer-text">Daniel Soh ©2021</span>

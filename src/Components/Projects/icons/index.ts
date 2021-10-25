@@ -7,7 +7,7 @@ import { ReactComponent as Git } from "./git.svg";
 import { ReactComponent as Node } from "./nodejs.svg";
 import { ReactComponent as React } from "./react.svg";
 import { ReactComponent as Typescript } from "./typescript.svg";
-import { ReactComponent as Python } from "./python.svg";
+import { ReactComponent as JQuery } from "./jquery.svg";
 
 const Icons = {
 	HTML,
@@ -19,7 +19,7 @@ const Icons = {
 	Node,
 	React,
 	Typescript,
-	Python
+	JQuery
 };
 
 export default Icons;
