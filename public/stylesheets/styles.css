@@ -50,16 +50,29 @@ body {
 .navlink {
 	font-weight: 700;
 	margin: 0 0.7rem;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	transition: all 0.25s;
-	border-top: solid 5px #1a1a1a;
 	animation: fadeInDown;
 	animation-duration: 0.8s;
+	position: relative;
 }
 
-.navlink:hover {
-	border-top: solid 5px #ff4d5a;
-	transform: translateY(3px);
+.navlink div::before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #ff4d5a;
+	transition: transform .5s;
+	transform: scaleX(0);
+	transform-origin: right;
+}
+
+.navlink div:hover::before {
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 /* Titles */
@@ -69,13 +82,8 @@ body {
 	letter-spacing: 3px;
 	margin: 0;
 	position: relative;
-	text-shadow: 5px 5px #ff4d5a;
+	text-shadow: 3px 4px #ff4d5a;
 	transition: all 0.25s;
-}
-
-.section-title:hover {
-	text-shadow: 3px 4px hsl(356, 100%, 65%);
-	transform: translate(3px);
 }
 
 /* Header */
@@ -88,6 +96,7 @@ body {
 	font-weight: 300;
 	text-align: center;
 	font-size: 3.5rem;
+	cursor: default;
 }
 
 .header span {
@@ -139,7 +148,6 @@ body {
 
 .info-header {
 	display: block;
-	font-weight: 500;
 	font-size: 1.2rem;
 	letter-spacing: 0.4px;
 	line-height: 1.8rem;
@@ -148,7 +156,7 @@ body {
 
 /* About - Info */
 .about-info {
-	padding-left: 2.5rem;
+	padding-left: 1.7rem;
 }
 
 .info-tabs {
@@ -156,13 +164,13 @@ body {
 }
 
 .info-tab-list {
-	margin: 0 0 1.5rem;
+	margin: 0 0 2rem;
 	padding: 0;
 }
 
 .info-tab {
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: 3rem;
 	padding: 6px 0;
 	position: relative;
 	font-weight: 500;
@@ -175,7 +183,6 @@ body {
 
 .info-tab-active {
 	color: #ff4d5a;
-	border-radius: 5px 5px 0 0;
 }
 
 .info-tab:before {
@@ -193,28 +200,37 @@ body {
 	background-color: #ff4d5a;
 }
 
-.info-tab:focus {
-	box-shadow: 0 0 5px hsl(208, 99%, 50%);
-	border-color: hsl(208, 99%, 50%);
-	outline: none;
-}
-
-.info-tab:focus:after {
-	content: "";
-	position: absolute;
-	height: 5px;
-	left: -4px;
-	right: -4px;
-	bottom: -5px;
-	background: #fff;
-}
-
-.info-tab-panel {
+.info-panel {
 	display: none;
+	animation: fadeInUp;
+	animation-duration: 1.2s;
 }
 
-.info-tab-panel-active {
+.info-panel-active {
 	display: block;
+}
+
+.info-panel ul {
+	padding: 0;
+}
+
+.panel-skills-item {
+	list-style: none;
+	padding-top: 1.5rem;
+}
+
+.panel-skills-item span {
+	padding-left: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.panel-skills-item p {
+	margin: 1rem;
+	margin-right: 0;
+	padding: 0 6.5rem 0 1rem;
+	font-weight: 200;
+	letter-spacing: 1px;
+	border-left: solid 3px #ff4d5a;
 }
 
 /* Projects */

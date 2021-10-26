@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Skills from "./Skills";
+import Education from "./Education";
+import Hobbies from "./Hobbies";
 
 const Info = () => {
 	const [ tabIndex, setTabIndex ] = useState(0);
@@ -14,23 +17,23 @@ const Info = () => {
 			<Tabs
 				className="info-tabs"
 				selectedTabClassName="info-tab-active"
-				selectedTabPanelClassName="info-tab-panel-active"
+				selectedTabPanelClassName="info-panel-active"
 				selectedIndex={tabIndex}
 				onSelect={(index) => setTabIndex(index)}
 			>
 				<TabList className="info-tab-list">
 					<Tab className="info-tab">Main skills</Tab>
-					<Tab className="info-tab">Experience</Tab>
-					<Tab className="info-tab">Education &#38; Certification</Tab>
+					<Tab className="info-tab">Education</Tab>
+					<Tab className="info-tab">Hobbies</Tab>
 				</TabList>
-				<TabPanel className="info-tab-panel">
-					<h2>Content 1</h2>
+				<TabPanel className="info-panel">
+					<Skills />
 				</TabPanel>
-				<TabPanel className="info-tab-panel">
-					<h2>Content 2</h2>
+				<TabPanel className="info-panel">
+					<Education />
 				</TabPanel>
-				<TabPanel className="info-tab-panel">
-					<h2>Content 3</h2>
+				<TabPanel className="info-panel">
+					<Hobbies />
 				</TabPanel>
 			</Tabs>
 		</div>
