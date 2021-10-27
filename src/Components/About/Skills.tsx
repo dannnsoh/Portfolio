@@ -3,18 +3,14 @@ const Skills = () => {
 		<div>
 			<ul>
 				<li className="panel-skills-item">
-					<span>
-						<i className="fas fa-code fa-2x" /> Web and user interface design
-					</span>
+					<span>Web and user interface design</span>
 					<p>
 						I absolutely enjoy the front-end of web development like implementing visual and interactive
 						elements and creating an overall fluid digital experience.
 					</p>
 				</li>
 				<li className="panel-skills-item">
-					<span>
-						<i className="fas fa-server fa-2x" /> Experience with server software
-					</span>
+					<span>Experience with server software</span>
 					<p>
 						I have also worked with some back-end frameworks, especially Express for Node and MongoDB, and
 						dabbled with a bit of SQL databases for basic understanding.

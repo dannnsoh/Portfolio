@@ -200,13 +200,6 @@ body {
 	background-color: #ff4d5a;
 }
 
-.fa-code,
-.fa-server,
-.fa-graduation-cap {
-	margin-right: 1rem;
-	color: #ff4d5a;
-}
-
 .info-panel {
 	display: none;
 	animation: fadeInUp;
@@ -221,13 +214,14 @@ body {
 	padding: 0;
 }
 
+/* Skills */
 .panel-skills-item {
 	list-style: none;
 	padding-top: 1.3rem;
 }
 
 .panel-skills-item span {
-	padding-left: 0.5rem;
+	margin-left: 1rem;
 	font-size: 1.2rem;
 }
 
@@ -239,29 +233,50 @@ body {
 	border-left: solid 3px #ff4d5a;
 }
 
+/* Education */
 .panel-education-item {
 	list-style: none;
-	padding-top: 1.5rem;
+	padding: 0.5rem 0 0 1rem;
 }
 
 .panel-education-item span {
-	padding-left: 0.5rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	color: #6a6a6a;
+}
+
+.fa-graduation-cap {
+	color: #ff4d5a;
+	margin-right: 1rem;
+	position: relative;
+	bottom: -5px;
 }
 
 .panel-education-item div {
-	margin: 1rem;
-	margin-right: 0;
-	padding: 0 6.5rem 0 1rem;
-	font-weight: 200;
+	margin: 1rem 0 0 1.2rem;
+	padding: 0 6.5rem 0.7rem 2.7rem;
+	font-size: 1.2rem;
 	letter-spacing: 1px;
 	border-left: solid 3px #ff4d5a;
+}
+
+.panel-education-item p {
+	margin: 0;
+	padding-top: 0.3rem;
+	font-size: 1.1rem;
+	font-weight: 200;
+}
+
+.background-info {
+	padding: 1rem 3.5rem 0 0;
+	font-weight: 200;
+	letter-spacing: 1.5px;
 }
 
 /* Projects */
 /* Projects Carousel */
 .carousel {
 	height: 100%;
+	width: 100%;
 	padding-top: 2rem;
 }
 
@@ -373,13 +388,13 @@ a.carousel-control-prev {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding: 0 5.2rem;
+	padding: 0 7.5rem;
 	margin-left: 2rem;
 	min-height: 634px;
 }
 
 .figure {
-	width: 158px;
+	width: 140px;
 	height: 128px;
 	display: block;
 	text-align: center;
@@ -389,7 +404,7 @@ a.carousel-control-prev {
 	position: relative;
 	background-color: #1a1a1a;
 	border: solid 1px #0a0a0a33;
-	border-radius: 50px;
+	border-radius: 25px;
 	box-shadow: 0 15px 15px -7px #0a0a0a;
 	opacity: 0;
 }
@@ -475,12 +490,12 @@ a.carousel-control-prev {
 	background-color: #1a1a1a;
 	color: #fafafa9c;
 	font-weight: 500;
-	font-size: 1.3rem;
-	line-height: 2.5rem;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	line-height: 2rem;
 	letter-spacing: 1px;
-	margin-top: 0.5rem;
+	margin: 1rem 0.5rem 0 0;
 	padding: 0;
-	width: 5.5rem;
 	border: none;
 	border-bottom: solid 4px #ff4d5a;
 	transition: all 0.25s;

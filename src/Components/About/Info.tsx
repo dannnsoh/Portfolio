@@ -1,11 +1,16 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Skills from "./Skills";
 import Education from "./Education";
-import Hobbies from "./Hobbies";
+import Background from "./Background";
 
 const Info = () => {
 	const [ tabIndex, setTabIndex ] = useState(0);
+	const [ ref, inView ] = useInView({
+		threshold: 0.9,
+		triggerOnce: true
+	});
 
 	return (
 		<div>
@@ -24,17 +29,31 @@ const Info = () => {
 				<TabList className="info-tab-list">
 					<Tab className="info-tab">Main skills</Tab>
 					<Tab className="info-tab">Education</Tab>
-					<Tab className="info-tab">Hobbies</Tab>
+					<Tab className="info-tab">Background</Tab>
 				</TabList>
-				<TabPanel className="info-panel">
-					<Skills />
-				</TabPanel>
-				<TabPanel className="info-panel">
-					<Education />
-				</TabPanel>
-				<TabPanel className="info-panel">
-					<Hobbies />
-				</TabPanel>
+				<div
+					ref={ref}
+					style={
+						inView ? (
+							{
+								animation: "fadeInUp",
+								animationDuration: "1s"
+							}
+						) : (
+							{ visibility: "hidden" }
+						)
+					}
+				>
+					<TabPanel className="info-panel">
+						<Skills />
+					</TabPanel>
+					<TabPanel className="info-panel">
+						<Education />
+					</TabPanel>
+					<TabPanel className="info-panel">
+						<Background />
+					</TabPanel>
+				</div>
 			</Tabs>
 		</div>
 	);

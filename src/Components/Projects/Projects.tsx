@@ -23,7 +23,7 @@ const Projects = () => {
 				>
 					<ProjectCarousel />
 				</Col>
-				<Col>
+				<Col className="icons-area">
 					<Icons />
 				</Col>
 			</Row>
