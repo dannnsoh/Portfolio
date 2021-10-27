@@ -192,7 +192,7 @@ body {
 	width: 30px;
 	height: 2px;
 	background-color: #fafafa;
-	transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .info-tab.info-tab-active:before {
@@ -200,10 +200,17 @@ body {
 	background-color: #ff4d5a;
 }
 
+.fa-code,
+.fa-server,
+.fa-graduation-cap {
+	margin-right: 1rem;
+	color: #ff4d5a;
+}
+
 .info-panel {
 	display: none;
 	animation: fadeInUp;
-	animation-duration: 1.2s;
+	animation-duration: 0.8s;
 }
 
 .info-panel-active {
@@ -216,7 +223,7 @@ body {
 
 .panel-skills-item {
 	list-style: none;
-	padding-top: 1.5rem;
+	padding-top: 1.3rem;
 }
 
 .panel-skills-item span {
@@ -225,6 +232,24 @@ body {
 }
 
 .panel-skills-item p {
+	margin: 1rem 0 0 1.6rem;
+	padding: 0.5rem 6.5rem 1rem 1rem;
+	font-weight: 200;
+	letter-spacing: 1px;
+	border-left: solid 3px #ff4d5a;
+}
+
+.panel-education-item {
+	list-style: none;
+	padding-top: 1.5rem;
+}
+
+.panel-education-item span {
+	padding-left: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.panel-education-item div {
 	margin: 1rem;
 	margin-right: 0;
 	padding: 0 6.5rem 0 1rem;
