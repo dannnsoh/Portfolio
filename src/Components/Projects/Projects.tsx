@@ -14,16 +14,18 @@ const Projects = () => {
 	return (
 		<Container className="projects-container" fluid>
 			<Row className="text-center mb-3">
-				<h1 className="section-title">Projects</h1>
+				<h1 className="section-title projects-title">Projects</h1>
 			</Row>
-			<Row className="projects-area">
+			<Row className="justify-content-center">
 				<Col
+					lg={7}
+					className="projects-area"
 					ref={ref}
 					style={inView ? { animation: "fadeIn", animationDuration: "1.5s" } : { visibility: "hidden" }}
 				>
 					<ProjectCarousel />
 				</Col>
-				<Col className="icons-area">
+				<Col lg={5} className="icons-area">
 					<Icons />
 				</Col>
 			</Row>

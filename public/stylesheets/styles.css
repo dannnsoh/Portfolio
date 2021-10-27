@@ -34,7 +34,7 @@ body {
 #projects,
 #contact {
 	height: 100vh;
-	padding: 6rem 10.7rem 0;
+	padding: 6rem 9% 0;
 }
 
 /* Navbar */
@@ -139,9 +139,10 @@ body {
 	position: relative;
 }
 /* About - thumbnail */
+
 .about-thumbnail img {
-	width: 90%;
-	min-width: 200px;
+	width: 526.5px;
+	min-width: 250px;
 	border-radius: 10px;
 	box-shadow: 0 20px 30px -10px #0a0a0a;
 }
@@ -151,7 +152,7 @@ body {
 	font-size: 1.2rem;
 	letter-spacing: 0.4px;
 	line-height: 1.8rem;
-	padding-right: 7rem;
+	padding-right: 10%;
 }
 
 /* About - Info */
@@ -227,7 +228,7 @@ body {
 
 .panel-skills-item p {
 	margin: 1rem 0 0 1.6rem;
-	padding: 0.5rem 6.5rem 1rem 1rem;
+	padding: 0.5rem 11.5% 1rem 1rem;
 	font-weight: 200;
 	letter-spacing: 1px;
 	border-left: solid 3px #ff4d5a;
@@ -273,11 +274,19 @@ body {
 }
 
 /* Projects */
+#projects {
+	padding: 6rem 4% 0 9%;
+}
+
+.projects-title {
+	padding-right: 95.2px;
+}
+
 /* Projects Carousel */
 .carousel {
 	height: 100%;
 	width: 100%;
-	padding-top: 2rem;
+	padding-top: 1.5rem;
 }
 
 .carousel-item {
@@ -300,7 +309,7 @@ body {
 /* carousel caption */
 .carousel-caption {
 	position: static;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .carousel-title {
@@ -312,7 +321,7 @@ body {
 }
 
 .carousel-description {
-	padding: 0 4.5rem;
+	padding: 0 6%;
 	margin-bottom: 0;
 	font-size: 1.1rem;
 }
@@ -344,11 +353,11 @@ body {
 
 /* carousel prev and next buttons */
 a.carousel-control-next {
-	right: -4rem;
+	right: -5rem;
 }
 
 a.carousel-control-prev {
-	left: -4rem;
+	left: -5rem;
 }
 
 .carousel-control-next-icon,
@@ -369,18 +378,7 @@ a.carousel-control-prev {
 
 /* carousel indicators */
 .carousel-indicators {
-	align-items: center;
-	bottom: -5rem;
-}
-
-.carousel-indicators button[data-bs-target] {
-	height: 6px;
-	background-color: #8a8a8a;
-}
-
-.carousel-indicators button.active {
-	background-color: #ff4d5a;
-	height: 10px;
+	display: none;
 }
 
 /* Projects Skills */
@@ -388,9 +386,9 @@ a.carousel-control-prev {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	padding: 0 7.5rem;
+	padding: 0 8%;
 	margin-left: 2rem;
-	min-height: 634px;
+	min-height: 724px;
 }
 
 .figure {

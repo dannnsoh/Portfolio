@@ -5,8 +5,8 @@ const Skills = () => {
 				<li className="panel-skills-item">
 					<span>Web and user interface design</span>
 					<p>
-						I absolutely enjoy the front-end of web development like implementing visual and interactive
-						elements and creating an overall fluid digital experience.
+						I mainly develop on the front-end like implementing visual and interactive elements, utilizing
+						frameworks such as Bootstrap, and creating an overall fluid digital experience.
 					</p>
 				</li>
 				<li className="panel-skills-item">
