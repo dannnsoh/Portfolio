@@ -1,13 +1,13 @@
+import Particles from "react-tsparticles";
+import particlesHomeOptions from "./particles/particlesHome.json";
+import particlesBodyOptions from "./particles/particlesBody.json";
+import { ISourceOptions } from "tsparticles";
 import { useInView } from "react-intersection-observer";
 import Navbar from "./Nav/Navbar";
 import Header from "./Home/Home";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
-import Particles from "react-tsparticles";
-import particlesHomeOptions from "./particles/particlesHome.json";
-import particlesBodyOptions from "./particles/particlesBody.json";
-import { ISourceOptions } from "tsparticles";
 
 const App = () => {
 	const [ ref, inView ] = useInView({

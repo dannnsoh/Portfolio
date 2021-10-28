@@ -8,7 +8,7 @@ const addEffect = (name: string, timeout: number) => {
 
 const iconFade = () => {
 	// const numsNormal = _.range(500, 10 * 230 + 500, 230);
-	const numsCircular = [0, 9, 3, 6, 7, 2, 8, 1, 5, 4]
+	const numsCircular = [0, 9, 3, 6, 7, 2, 8, 1, 4, 5]
 	const icons: string[] = []
 	const all = document.querySelectorAll(".figure")
 	all.forEach((icon) => {
