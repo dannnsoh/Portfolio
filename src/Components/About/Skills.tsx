@@ -12,8 +12,8 @@ const Skills = () => {
 				<li className="panel-skills-item">
 					<span>Experience with server software</span>
 					<p>
-						I have also worked with some back-end frameworks, especially Express for Node and MongoDB, and
-						dabbled with a bit of SQL databases for basic understanding.
+						I have also implemented back-end structure of websites, mainly utilizing frameworks such as Node
+						and Express with MongoDB, and briefly with others for basic understanding.
 					</p>
 				</li>
 			</ul>
