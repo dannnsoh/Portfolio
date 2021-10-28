@@ -139,7 +139,6 @@ body {
 	position: relative;
 }
 /* About - thumbnail */
-
 .about-thumbnail img {
 	width: 526.5px;
 	min-width: 250px;
@@ -606,6 +605,10 @@ a.carousel-control-prev {
 		width: 100%;
 	}
 
+	.info-tab-list {
+		text-align: center;
+	}
+
 	#about {
 		padding: 6rem 9% 0;
 	}
@@ -621,7 +624,7 @@ a.carousel-control-prev {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 925px) {
 	.info-tab {
 		margin-right: 1.5rem;
 	}
