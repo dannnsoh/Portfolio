@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3382a5b8.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0bb26f9d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0bb26f9d.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.5d68f097.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.5d68f097.js.map",
+    "static/js/2.8e660e96.chunk.js": "/Portfolio/static/js/2.8e660e96.chunk.js",
+    "static/js/2.8e660e96.chunk.js.map": "/Portfolio/static/js/2.8e660e96.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.3382a5b8.chunk.css.map": "/Portfolio/static/css/main.3382a5b8.chunk.css.map",
+    "static/js/2.8e660e96.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.8e660e96.chunk.js.LICENSE.txt",
+    "static/media/css.cedea6c9.svg": "/Portfolio/static/media/css.cedea6c9.svg",
+    "static/media/diceroll.3e8b3873.png": "/Portfolio/static/media/diceroll.3e8b3873.png",
+    "static/media/express.f065675c.svg": "/Portfolio/static/media/express.f065675c.svg",
+    "static/media/git.d85c31a4.svg": "/Portfolio/static/media/git.d85c31a4.svg",
+    "static/media/github.4a1d2a92.svg": "/Portfolio/static/media/github.4a1d2a92.svg",
+    "static/media/html.9941d313.svg": "/Portfolio/static/media/html.9941d313.svg",
+    "static/media/javascript.fe725c64.svg": "/Portfolio/static/media/javascript.fe725c64.svg",
+    "static/media/jquery.afbdb164.svg": "/Portfolio/static/media/jquery.afbdb164.svg",
+    "static/media/me.e47af8f9.jpg": "/Portfolio/static/media/me.e47af8f9.jpg",
+    "static/media/mongodb.e649fa71.svg": "/Portfolio/static/media/mongodb.e649fa71.svg",
+    "static/media/nodejs.3162bade.svg": "/Portfolio/static/media/nodejs.3162bade.svg",
+    "static/media/react.0f4ba024.svg": "/Portfolio/static/media/react.0f4ba024.svg",
+    "static/media/simongame.25499a6b.png": "/Portfolio/static/media/simongame.25499a6b.png",
+    "static/media/telegram.7b61d2d2.svg": "/Portfolio/static/media/telegram.7b61d2d2.svg",
+    "static/media/tindog.42783ff0.png": "/Portfolio/static/media/tindog.42783ff0.png",
+    "static/media/typescript.a4562526.svg": "/Portfolio/static/media/typescript.a4562526.svg",
+    "static/media/yelpcamp.16cff319.png": "/Portfolio/static/media/yelpcamp.16cff319.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d68f097.js",
+    "static/js/2.8e660e96.chunk.js",
+    "static/css/main.3382a5b8.chunk.css",
+    "static/js/main.0bb26f9d.chunk.js"
+  ]
+}
