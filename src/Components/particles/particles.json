@@ -5,30 +5,10 @@
 		},
 		"position": "center"
 	},
-	"fpsLimit": 75,
+	"fpsLimit": 60,
 	"interactivity": {
-		"detectsOn": "window",
 		"events": {
-			"onClick": {
-				"enable": true,
-				"mode": "push"
-			},
-			"onHover": {
-				"enable": true,
-				"mode": "grab"
-			},
 			"resize": true
-		},
-		"modes": {
-			"push": {
-				"quantity": 1
-			},
-			"grab": {
-				"distance": 200,
-				"lineLinked": {
-					"opacity": 0.8
-				}
-			}
 		}
 	},
 	"particles": {
@@ -39,13 +19,8 @@
 			"color": "#6a6a6a",
 			"distance": 175,
 			"enable": true,
-			"opacity": 0.8,
-			"width": 1,
-			"shadow": {
-				"enable": true,
-				"blur": 4,
-				"color": "#6a6a6a"
-			}
+			"opacity": 0.5,
+			"width": 1
 		},
 		"collisions": {
 			"enable": true
@@ -55,7 +30,7 @@
 			"enable": true,
 			"outMode": "bounce",
 			"random": false,
-			"speed": 0.75,
+			"speed": 0.6,
 			"straight": false
 		},
 		"number": {
@@ -63,18 +38,10 @@
 				"enable": true,
 				"value_area": 800
 			},
-			"value": 25
+			"value": 20
 		},
 		"opacity": {
-			"value": {
-				"min": 0.1,
-				"max": 0.7
-			},
-			"animation": {
-				"enable": true,
-				"speed": 1.5,
-				"startValue": "min"
-			}
+			"value": 0.5
 		},
 		"shape": {
 			"type": "circle"

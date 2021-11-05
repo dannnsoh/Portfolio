@@ -1,6 +1,5 @@
 import Particles from "react-tsparticles";
-import particlesHomeOptions from "./particles/particlesHome.json";
-import particlesBodyOptions from "./particles/particlesBody.json";
+import particlesOptions from "./particles/particles.json";
 import { ISourceOptions } from "tsparticles";
 import { useInView } from "react-intersection-observer";
 import Navbar from "./Nav/Navbar";
@@ -17,23 +16,20 @@ const App = () => {
 
 	return (
 		<div>
-			<Particles id="particlesHome" options={particlesHomeOptions as ISourceOptions} />
+			<Particles id="particlesHome" options={particlesOptions as ISourceOptions} />
 			<Navbar inView={inView} />
 			<section id="home" ref={ref}>
 				<Header />
 			</section>
-			<div>
-				<Particles id="particlesBody" options={particlesBodyOptions as ISourceOptions} />
-				<section id="about">
-					<About />
-				</section>
-				<section id="projects">
-					<Projects />
-				</section>
-				<section id="contact">
-					<Contact />
-				</section>
-			</div>
+			<section id="about">
+				<About />
+			</section>
+			<section id="projects">
+				<Projects />
+			</section>
+			<section id="contact">
+				<Contact />
+			</section>
 		</div>
 	);
 };

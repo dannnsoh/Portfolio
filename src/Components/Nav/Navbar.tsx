@@ -18,7 +18,7 @@ const Header = (props: NavProps) => {
 			variant="dark"
 		>
 			<Container fluid>
-				<Nav activeKey={active} onSelect={(selectedKey) => setActive(selectedKey ? selectedKey : "")}>
+				<Nav activeKey={active} onSelect={(selectedKey: any) => setActive(selectedKey ? selectedKey : "")}>
 					<NavLink name="Home" />
 					<NavLink name="About" />
 					<NavLink name="Projects" />
