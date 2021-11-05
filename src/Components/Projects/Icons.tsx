@@ -27,7 +27,7 @@ const Icons = () => {
 			<Col>
 				<Icon name="expressjs" icon={<AppIcons.Express className="skills-icon" />} />
 				<Icon name="typescript" icon={<AppIcons.Typescript className="skills-icon" />} />
-				<Icon name="jquery" icon={<AppIcons.JQuery className="skills-icon" />} />
+				<Icon name="sass" icon={<AppIcons.SASS className="skills-icon" />} />
 			</Col>
 		</div>
 	);
