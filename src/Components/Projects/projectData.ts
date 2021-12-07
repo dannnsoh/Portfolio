@@ -1,4 +1,4 @@
-import tindog from "./images/tindog.png";
+import jbook from "./images/jbook.png";
 import diceroll from "./images/diceroll.png";
 import simongame from "./images/simongame.png";
 import yelpcamp from "./images/yelpcamp.png";
@@ -6,15 +6,16 @@ import yelpcamp from "./images/yelpcamp.png";
 const projects = [
 	{
 		title: "YelpCamp",
-		description: "Imitation of Yelp for Campgrounds. Reviews and recommendations of the best camping sites.",
+		description:
+			"Imitation of Yelp for Campgrounds. Reviews and recommendations of the best camping sites.",
 		image: yelpcamp,
 		link: "https://yelpcamp-dandemo.herokuapp.com/"
 	},
 	{
-		title: "Tindog",
-		description: "Matchmaking app for dog owners and their dogs to meet and play, like Tinder for dogs.",
-		image: tindog,
-		link: "https://dannnsoh.github.io/TinDog/"
+		title: "JBook",
+		description:
+			"Interactice coding environment. You can write Javascript, import any module, see it get executed, and write comprehensive documentation using markdown. Run 'npx jsnote-dan serve' in your terminal.",
+		image: jbook
 	},
 	{
 		title: "Dice Roll",

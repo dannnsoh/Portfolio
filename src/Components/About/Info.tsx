@@ -1,30 +1,25 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Skills from "./Skills";
 import Education from "./Education";
 import Background from "./Background";
+import Icons from "./Icons";
 
 const Info = () => {
-	const [ tabIndex, setTabIndex ] = useState(0);
-	const [ ref, inView ] = useInView({
+	const [tabIndex, setTabIndex] = useState(0);
+	const [ref, inView] = useInView({
 		threshold: 0.9,
 		triggerOnce: true
 	});
 
 	return (
 		<div>
-			<span className="info-header">
-				I am a self-taught web developer with a strong passion for Javascript, React, and all things web
-				development. The unique combination of creativity, logic, technology and never running out of new things
-				to discover, drives my excitement and passion for web development.
-			</span>
 			<Tabs
 				className="info-tabs"
 				selectedTabClassName="info-tab-active"
 				selectedTabPanelClassName="info-panel-active"
 				selectedIndex={tabIndex}
-				onSelect={(index) => setTabIndex(index)}
+				onSelect={index => setTabIndex(index)}
 			>
 				<TabList className="info-tab-list">
 					<Tab className="info-tab">Main skills</Tab>
@@ -34,18 +29,24 @@ const Info = () => {
 				<div
 					ref={ref}
 					style={
-						inView ? (
-							{
-								animation: "fadeInUp",
-								animationDuration: "1s"
-							}
-						) : (
-							{ visibility: "hidden" }
-						)
+						inView
+							? {
+									animation: "fadeInUp",
+									animationDuration: "1s"
+							  }
+							: { visibility: "hidden" }
 					}
 				>
 					<TabPanel className="info-panel">
-						<Skills />
+						<div className="icons-text">
+							I mainly develop on the frontend by implementing visual and
+							interactive elements, utilizing frameworks and libraries such
+							as Bootstrap and React, creating an overall fluid digital
+							experience. I have also worked on the backend with databases,
+							APIs, and servers, primarily using Node with Express and
+							MongoDB, or Python with Django and PostgreSQL.
+						</div>
+						<Icons />
 					</TabPanel>
 					<TabPanel className="info-panel">
 						<Education />

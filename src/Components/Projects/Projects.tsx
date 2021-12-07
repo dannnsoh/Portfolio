@@ -2,11 +2,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProjectCarousel from "./ProjectCarousel";
-import Icons from "./Icons";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
-	const [ ref, inView ] = useInView({
+	const [ref, inView] = useInView({
 		threshold: 0.9,
 		triggerOnce: true
 	});
@@ -18,15 +17,16 @@ const Projects = () => {
 			</Row>
 			<Row className="justify-content-center">
 				<Col
-					lg={7}
+					lg={8}
 					className="projects-area"
 					ref={ref}
-					style={inView ? { animation: "fadeIn", animationDuration: "1.5s" } : { visibility: "hidden" }}
+					style={
+						inView
+							? { animation: "fadeIn", animationDuration: "1.5s" }
+							: { visibility: "hidden" }
+					}
 				>
 					<ProjectCarousel />
-				</Col>
-				<Col lg={5} className="icons-area">
-					<Icons />
 				</Col>
 			</Row>
 		</Container>

@@ -4,7 +4,7 @@ const Education = () => {
 			<ul>
 				<li className="panel-education-item">
 					<span>
-						<i className="fas fa-graduation-cap fa-2x" /> 2022 onwards
+						<i className="fas fa-graduation-cap fa-2x" /> Present
 					</span>
 					<div>
 						Singapore University of Social Sciences

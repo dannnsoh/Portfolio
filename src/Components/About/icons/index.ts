@@ -8,6 +8,8 @@ import { ReactComponent as Node } from "./nodejs.svg";
 import { ReactComponent as React } from "./react.svg";
 import { ReactComponent as Typescript } from "./typescript.svg";
 import { ReactComponent as SASS } from "./sass.svg";
+import { ReactComponent as Python } from "./python.svg";
+import { ReactComponent as Django } from "./django.svg";
 
 const Icons = {
 	HTML,
@@ -19,7 +21,9 @@ const Icons = {
 	Node,
 	React,
 	Typescript,
-	SASS
+	SASS,
+	Python,
+	Django
 };
 
 export default Icons;
