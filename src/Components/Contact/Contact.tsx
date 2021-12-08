@@ -2,24 +2,39 @@ import Footer from "./Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { useState } from "react";
-import React from "react";
+import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
-	const [ formInput, setFormInput ] = useState({
+	const [formInput, setFormInput] = useState({
 		name: "",
 		email: "",
 		message: ""
 	});
+	const [ref, inView] = useInView({
+		threshold: 0.5,
+		triggerOnce: true
+	});
 
-	const handleInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+	const handleInput = (
+		event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
 		const { name, value } = event.target;
-		setFormInput((prev) => {
+		setFormInput(prev => {
 			return { ...prev, [name]: value };
 		});
 	};
 
 	return (
-		<Container className="contact-container" fluid>
+		<Container
+			className="contact-container"
+			fluid
+			ref={ref}
+			style={
+				inView
+					? { animation: "fadeIn", animationDuration: "1.5s" }
+					: { visibility: "hidden" }
+			}
+		>
 			<Row className="text-center">
 				<h1 className="section-title">Contact Me</h1>
 			</Row>
@@ -31,9 +46,18 @@ const Contact = () => {
 					encType="text/plain"
 				>
 					<div className="input-area-heading">
-						<span>Have a question or want to work together? Let's get in touch!👋</span>
+						<span>
+							Have a question or want to work together? Let's get in
+							touch!👋
+						</span>
 					</div>
-					<input onChange={handleInput} name="name" type="text" placeholder="Name" value={formInput.name} />
+					<input
+						onChange={handleInput}
+						name="name"
+						type="text"
+						placeholder="Name"
+						value={formInput.name}
+					/>
 					<input
 						onChange={handleInput}
 						name="email"

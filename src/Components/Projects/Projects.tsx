@@ -1,24 +1,23 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import ProjectCarousel from "./ProjectCarousel";
+import projects from "./projectData";
+import ProjectCard from "./ProjectCard";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
 	const [ref, inView] = useInView({
-		threshold: 0.9,
+		threshold: 0.1,
 		triggerOnce: true
 	});
 
 	return (
-		<Container className="projects-container" fluid>
+		<Container fluid>
 			<Row className="text-center mb-3">
-				<h1 className="section-title projects-title">Projects</h1>
+				<h1 className="section-title">Projects</h1>
 			</Row>
-			<Row className="justify-content-center">
-				<Col
-					lg={8}
-					className="projects-area"
+			<Row>
+				<div
+					className="projects-container"
 					ref={ref}
 					style={
 						inView
@@ -26,8 +25,18 @@ const Projects = () => {
 							: { visibility: "hidden" }
 					}
 				>
-					<ProjectCarousel />
-				</Col>
+					{projects.map(project => {
+						return (
+							<ProjectCard
+								key={project.id}
+								title={project.title}
+								description={project.description}
+								image={project.image}
+								link={project.link}
+							/>
+						);
+					})}
+				</div>
 			</Row>
 		</Container>
 	);

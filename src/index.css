@@ -9,6 +9,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	background-color: #1a1a1a;
 	color: #fafafa;
+	cursor: default;
 	overflow-x: hidden;
 }
 
@@ -25,7 +26,7 @@ body {
 #projects,
 #contact {
 	height: 100vh;
-	padding: 6rem 9% 0;
+	padding: 5rem 9% 0;
 }
 
 /* Navbar */
@@ -158,7 +159,7 @@ body {
 /* About - Info */
 
 .info-tabs {
-	padding-top: 4rem;
+	padding-top: 2rem;
 }
 
 .info-tab-list {
@@ -331,54 +332,99 @@ body {
 
 /* Projects */
 
-/* Projects Carousel */
-.carousel {
-	height: 100%;
-	width: 100%;
-	padding-top: 1.5rem;
+#projects {
+	/* ! CHANGE */
+	height: 100vh;
+	padding: 5rem 0 0;
 }
 
-.carousel-item {
-	height: 100%;
+.projects-container {
+	/* background-color: #6a6a6a; */
+	position: relative;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	justify-content: flex-start;
+	margin-top: 1rem;
+	padding: 3.5rem 0 4rem 5%;
 }
 
-.carousel-image {
-	display: block;
-	width: 100%;
-	max-height: 612px;
-	border: solid 1px #0a0a0a71;
-	border-radius: 30px;
-	box-shadow: 0 40px 25px -10px #0a0a0a9f;
+.projects-container::-webkit-scrollbar {
+	height: 12px;
+}
+
+.projects-container::-webkit-scrollbar-button {
+	display: none;
+}
+.projects-container::-webkit-scrollbar-track {
+	background-color: transparent;
+	margin: 0 6rem;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+	background-color: #2a2a2a;
+	border-radius: 6px;
+	box-shadow: inset 2px 2px 2px #333333, inset -2px -2px 2px #222222;
+}
+
+.card-item {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	height: 100%;
+	width: 620px;
+	min-width: 400px;
+	background-color: transparent;
+	border: none;
+	transition: all 0.2s;
+}
+
+.card-item:hover {
+	transform: translateY(-1rem);
+}
+
+.card-item:hover ~ .card-item {
+	transform: translateX(8.5rem);
+}
+
+.card-image {
+	height: 300px;
+	width: 550px;
+	margin: 0 auto;
+	border-radius: 15px;
+	box-shadow: -1rem 0 2.5rem #000;
 	transition: all 0.25s;
 }
 
-.carousel-image:hover {
-	transform: scale(0.96);
+.card-image {
+	cursor: pointer;
 }
 
-/* carousel caption */
-.carousel-caption {
-	position: static;
-	padding-bottom: 1rem;
+.card-body {
+	padding: 1rem 1rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-.carousel-title {
+.card-caption {
+	padding-bottom: 3rem;
+}
+
+.card-title {
 	font-size: 1.5rem;
 	font-weight: 600;
 	letter-spacing: 1.5px;
-	position: relative;
-	top: -10px;
+	transition: all 0.25s;
 }
 
-.carousel-description {
-	padding: 0 6%;
-	margin-bottom: 0;
+.card-description {
 	font-size: 1.1rem;
 }
 
-/* carousel links */
-.carousel-link {
-	background: none;
+/* card button */
+.card-link {
+	background-color: transparent;
 	color: #fafafa9c;
 	font-weight: 500;
 	font-size: 1.1rem;
@@ -388,47 +434,18 @@ body {
 	border: none;
 	text-transform: uppercase;
 	border-bottom: solid 4px #ff4d5a;
-	transition: all 0.25s;
+	transition: all 0.2s;
+	margin-top: auto;
 }
 
-.carousel-link:hover {
-	transform: translateY(-4px);
+.card-link:hover {
+	transform: translateY(-6px);
 	color: #fafafa;
 }
 
-.carousel-link a {
+.card-link a {
 	color: inherit;
 	text-decoration: none;
-}
-
-/* carousel prev and next buttons */
-a.carousel-control-next {
-	right: -5rem;
-}
-
-a.carousel-control-prev {
-	left: -5rem;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-	height: 3rem;
-	width: 3rem;
-}
-
-.carousel-control-next-icon {
-	position: absolute;
-	left: 4rem;
-}
-
-.carousel-control-prev-icon {
-	position: absolute;
-	right: 4rem;
-}
-
-/* carousel indicators */
-.carousel-indicators {
-	display: none;
 }
 
 /* Contact */
@@ -566,18 +583,6 @@ a.carousel-control-prev {
 	#about {
 		padding: 6rem 0 0;
 	}
-
-	#projects {
-		padding: 6rem 9% 0;
-	}
-
-	.projects-title {
-		padding-right: 12px;
-	}
-
-	.projects-area {
-		width: 85%;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -607,16 +612,6 @@ a.carousel-control-prev {
 
 	#about {
 		padding: 6rem 9% 0;
-	}
-
-	#projects {
-		padding: 6rem 7% 0;
-	}
-}
-
-@media (max-width: 1000px) {
-	#projects {
-		padding: 6rem 5% 0;
 	}
 }
 
