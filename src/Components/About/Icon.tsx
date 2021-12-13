@@ -9,7 +9,9 @@ const Icon = (props: IconProps) => {
 	return (
 		<Figure className={`${props.name}-icon`}>
 			{props.icon}
-			<Figure.Caption>{props.name.toUpperCase()}</Figure.Caption>
+			<Figure.Caption>
+				{props.name === "cpp" ? "C++" : props.name.toUpperCase()}
+			</Figure.Caption>
 		</Figure>
 	);
 };

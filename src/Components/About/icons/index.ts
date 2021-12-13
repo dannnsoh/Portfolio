@@ -9,7 +9,7 @@ import { ReactComponent as React } from "./react.svg";
 import { ReactComponent as Typescript } from "./typescript.svg";
 import { ReactComponent as SASS } from "./sass.svg";
 import { ReactComponent as Python } from "./python.svg";
-import { ReactComponent as Django } from "./django.svg";
+import { ReactComponent as CPP } from "./cpp.svg";
 
 const Icons = {
 	HTML,
@@ -23,7 +23,7 @@ const Icons = {
 	Typescript,
 	SASS,
 	Python,
-	Django
+	CPP
 };
 
 export default Icons;

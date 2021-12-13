@@ -38,7 +38,7 @@ const Icons = () => {
 					icon={<AppIcons.Express className="skills-icon" />}
 				/>
 				<Icon name="python" icon={<AppIcons.Python className="skills-icon" />} />
-				<Icon name="django" icon={<AppIcons.Django className="skills-icon" />} />
+				<Icon name="cpp" icon={<AppIcons.CPP className="skills-icon" />} />
 			</Row>
 		</div>
 	);
