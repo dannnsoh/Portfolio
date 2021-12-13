@@ -9,7 +9,7 @@ const NavLink = (props: NavProps) => {
 
 	return (
 		<Nav.Link className="navlink" href={id}>
-			<div>{props.name.toUpperCase()}</div>
+			{props.name.toUpperCase()}
 		</Nav.Link>
 	);
 };

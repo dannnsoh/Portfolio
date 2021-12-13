@@ -45,12 +45,11 @@ body {
 	margin: 0 0.7rem;
 	letter-spacing: 2px;
 	transition: all 0.25s;
-	animation: fadeInDown;
-	animation-duration: 0.8s;
+	animation: fadeInDown 0.8s;
 	position: relative;
 }
 
-.navlink div::before {
+.navlink::before {
 	content: "";
 	position: absolute;
 	top: 1px;
@@ -63,7 +62,7 @@ body {
 	transform-origin: right;
 }
 
-.navlink div:hover::before {
+.navlink:hover::before {
 	transform: scaleX(1);
 	transform-origin: left;
 }
@@ -104,24 +103,23 @@ body {
 	font-size: 1.6rem;
 	background-color: transparent;
 	color: #fafafa69;
+	animation: fadeInUp 3s;
 	position: relative;
-	top: 185px;
+	top: 200px;
 	transition: all 0.25s;
-	animation: fadeInUp;
-	animation-duration: 1.5s;
 }
 
 .animated-button span {
 	display: inline-block;
 	color: inherit;
-	transform: translate3d(0, -4px, 0);
+	transform: translateY(-4px);
 	transition: all 0.2s cubic-bezier(0.2, 0.57, 0.67, 1.53);
 }
 
-.animated-button::before {
+.animated-button::after {
 	content: "";
 	position: absolute;
-	background: #ff4d5a;
+	background: #ff4d5969;
 	width: 100%;
 	top: 100%;
 	left: 0;
@@ -133,14 +131,15 @@ body {
 .animated-button:hover {
 	color: #fafafa;
 	transform: scale(0.95);
-	top: 200px;
+	top: 215px;
 }
 
 .animated-button:hover span {
-	transform: translate(0);
+	transform: translateY(0);
 }
 
-.animated-button:hover::before {
+.animated-button:hover::after {
+	background-color: #ff4d5a;
 	transform: scale3d(1.2, 0.3, 1);
 	transition: all 0.2s cubic-bezier(0.8, 0, 0.1, 1);
 }
@@ -228,8 +227,7 @@ body {
 
 .info-panel {
 	display: none;
-	animation: fadeInUp;
-	animation-duration: 0.8s;
+	animation: fadeInUp 0.8s;
 }
 
 .info-panel-active {
@@ -571,8 +569,6 @@ body {
 .footer-button:hover {
 	background-color: inherit;
 	color: #ff4d5a;
-	animation: shakeY;
-	animation-duration: 6s;
 }
 
 .footer-button a {

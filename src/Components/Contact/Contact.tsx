@@ -44,6 +44,7 @@ const Contact = () => {
 					method="post"
 					className="input-area"
 					encType="text/plain"
+					autoComplete="off"
 				>
 					<div className="input-area-heading">
 						<span>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
@@ -9,16 +8,18 @@ interface NavProps {
 }
 
 const Header = (props: NavProps) => {
-	const [ active, setActive ] = useState("");
-
 	return (
 		<Navbar
-			style={props.inView ? {} : { boxShadow: "0 1px 6px 3px #0a0a0a93", backgroundColor: "#1a1a1a" }}
+			style={
+				props.inView
+					? {}
+					: { boxShadow: "0 1px 6px 3px #0a0a0a93", backgroundColor: "#1a1a1a" }
+			}
 			fixed="top"
 			variant="dark"
 		>
 			<Container fluid>
-				<Nav activeKey={active} onSelect={(selectedKey: any) => setActive(selectedKey ? selectedKey : "")}>
+				<Nav activeKey={""}>
 					<NavLink name="Home" />
 					<NavLink name="About" />
 					<NavLink name="Projects" />
